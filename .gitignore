@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+.venv/
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# General
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+.git/
