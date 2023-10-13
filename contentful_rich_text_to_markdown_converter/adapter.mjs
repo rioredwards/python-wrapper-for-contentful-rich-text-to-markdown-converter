@@ -1,4 +1,4 @@
-import richTextConverter from "../contentful-rich-text-to-markdown-converter/dist/index.js";
+import richTextConverter from "./node-contentful-rich-text-to-markdown-converter/dist/index.js";
 
 const rawRichText = process.argv[2];
 if (!rawRichText || typeof rawRichText !== "string") {

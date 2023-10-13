@@ -3,7 +3,7 @@ import json
 import os
 
 
-def call_node(rich_text):
+def convert_rich_text_to_markdown(rich_text):
     # Get the directory of the current Python script
     current_directory = os.path.dirname(os.path.abspath(__file__))
 

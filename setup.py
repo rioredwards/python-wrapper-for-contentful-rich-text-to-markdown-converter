@@ -11,6 +11,12 @@ setup(
     author_email="rioredwards@gmail.com",
     license="MIT",
     packages=find_packages(),
+    package_data={
+        "contentful_rich_text_to_markdown_converter": [
+            "adapter.mjs",
+            "node-contentful-rich-text-to-markdown-converter/*",
+        ]
+    },
     install_requires=[],
     classifiers=[
         "Development Status :: 3 - Alpha",
