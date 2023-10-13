@@ -1,0 +1,3 @@
+[submodule "contentful-rich-text-to-markdown-converter"]
+	path = contentful-rich-text-to-markdown-converter
+	url = https://github.com/rioredwards/contentful-rich-text-to-markdown-converter
