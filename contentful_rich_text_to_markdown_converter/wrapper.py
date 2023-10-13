@@ -8,7 +8,7 @@ def convert_rich_text_to_markdown(rich_text):
     current_directory = os.path.dirname(os.path.abspath(__file__))
 
     # Construct the path to your Node.js file
-    file_path = os.path.join(current_directory, "adapter.mjs")
+    file_path = os.path.join(current_directory, "adapter.bundle.js")
 
     # Convert rich_text to JSON
     json_rich_text = json.dumps(rich_text)

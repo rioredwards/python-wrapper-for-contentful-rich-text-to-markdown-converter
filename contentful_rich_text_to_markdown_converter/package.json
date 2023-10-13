@@ -1,0 +1,15 @@
+{
+  "name": "python_wrapper_for_contentful_rich_text_to_markdown_converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "0.19.4"
+  }
+}
