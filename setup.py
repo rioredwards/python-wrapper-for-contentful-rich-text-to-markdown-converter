@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="contentful_rich_text_to_markdown_converter",
-    version="0.2",
+    version="1.0",
     description="A Python wrapper for converting Contentful rich text to Markdown",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
