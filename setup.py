@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="contentful_rich_text_to_markdown_converter",
-    version="0.1",
+    version="0.2",
     description="A Python wrapper for converting Contentful rich text to Markdown",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -13,8 +13,7 @@ setup(
     packages=find_packages(),
     package_data={
         "contentful_rich_text_to_markdown_converter": [
-            "adapter.mjs",
-            "node-contentful-rich-text-to-markdown-converter/**/*",
+            "adapter.bundle.js",
         ]
     },
     install_requires=[],
