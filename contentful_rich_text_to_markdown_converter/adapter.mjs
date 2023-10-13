@@ -1,4 +1,4 @@
-import richTextConverter from "./node-contentful-rich-text-to-markdown-converter/dist/index.js";
+import { convertRichTextToMarkdown } from "./node-contentful-rich-text-to-markdown-converter/dist/bundle.mjs";
 
 const rawRichText = process.argv[2];
 if (!rawRichText || typeof rawRichText !== "string") {
@@ -8,7 +8,7 @@ if (!rawRichText || typeof rawRichText !== "string") {
 
 function main() {
   const document = JSON.parse(rawRichText);
-  const result = richTextConverter(document);
+  const result = convertRichTextToMarkdown(document);
 
   if (result === undefined) {
     console.error("Could not convert rich text to markdown.");
