@@ -1,4 +1,6 @@
-import { convertRichTextToMarkdown } from "./node-contentful-rich-text-to-markdown-converter/dist/bundle.mjs";
+const {
+  convertRichTextToMarkdown,
+} = require("./node-contentful-rich-text-to-markdown-converter/dist/index.js");
 
 const rawRichText = process.argv[2];
 if (!rawRichText || typeof rawRichText !== "string") {
