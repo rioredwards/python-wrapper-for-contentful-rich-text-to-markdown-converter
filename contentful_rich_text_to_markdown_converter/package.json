@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "0.19.4"
+    "esbuild": "0.19.4",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.6"
   }
 }
