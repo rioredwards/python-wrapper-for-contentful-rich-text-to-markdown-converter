@@ -3,6 +3,10 @@ import json
 import os
 
 
+def serialize_entry(obj):
+    return obj.raw if hasattr(obj, "raw") else obj.__dict__
+
+
 def convert_rich_text_to_markdown(rich_text):
     # Get the directory of the current Python script
     current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -11,7 +15,7 @@ def convert_rich_text_to_markdown(rich_text):
     file_path = os.path.join(current_directory, "adapter.bundle.js")
 
     # Convert rich_text to JSON
-    json_rich_text = json.dumps(rich_text)
+    json_rich_text = json.dumps(rich_text, default=serialize_entry)
 
     try:
         # Execute Node.js script and capture output
